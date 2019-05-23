@@ -6,6 +6,7 @@ import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Authors from './views/Authors.vue'
 import Teachers from './views/Teachers.vue'
+import Partners from './views/Partners.vue'
 
 //execute the Use Method on the Vue Object to use plugins such as the Vue Router
 Vue.use(VueRouter);
@@ -31,6 +32,11 @@ const routes = [
     path: '/teachers',
     name: 'Teachers',
     component: Teachers
+  },
+  {
+    path: '/partners',
+    name: 'Partners',
+    component: Partners
   }
 ]
 

@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Inconsolata|Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto&display=swap");
 
 article,
 aside,
@@ -211,11 +211,16 @@ h1 {
   line-height: 0.8;
   /* color: #ff7272; */
   color: #ff4f4f;
-  text-shadow: 1px 1px #b7ee4a, 2px 2px #b7ee4a;
+  text-shadow: 1px 1px black, 2px 2px black;
   letter-spacing: 1px;
 }
 h2 {
   line-height: 1;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2rem;
+  color: #ff4f4f;
+  text-shadow: 1px 1px black;
+  letter-spacing: 1px;
 }
 
 a {
@@ -228,8 +233,11 @@ a {
 
 p,
 li {
-  font-family: "Inconsolata", monospace;
-  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 125%;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  color: #070707;
 }
 .wrapper {
   width: 1000px;
