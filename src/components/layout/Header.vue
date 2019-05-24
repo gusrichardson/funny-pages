@@ -3,7 +3,10 @@
     <div class="wrapper">
       <div class="title-container">
         <h1>Funny pages</h1>
-        <h3>Celebrating books that make kids laugh</h3>
+        <h3 class="subtitle">
+          Celebrating books that make kids laugh
+          <span class="emoji">🤣</span>
+        </h3>
       </div>
       <div id="nav">
         <router-link to="/">Home</router-link>
@@ -22,16 +25,33 @@ export default {
 };
 </script>
 <style>
+.subtitle {
+  position: relative;
+  display: inline-block;
+}
+.emoji {
+  font-size: 2rem;
+  position: absolute;
+  right: -42px;
+  bottom: -13px;
+  transition: 1s;
+  cursor: default;
+}
+
+.emoji:hover {
+  transform: rotate(360deg);
+}
 #header {
-  height: 190px;
+  height: 210px;
   /* border: 10px solid cornflowerblue; */
   display: flex;
+  /* background: #ffdd9a; */
 }
 
 .title-container {
   /* width: 300px; */
-  height: 140px;
-  padding-top: 50px;
+  height: 160px;
+  padding-top: 55px;
   /* border: 2px solid pink; */
 }
 

@@ -22,8 +22,8 @@ h1 {
 }
 #banner {
   height: 400px;
-  background-image: url(../assets/animals.jpg);
-  background-position: 0% 20%;
+  background-image: url(../assets/strange-animals.jpg);
+  /* background-position: 0% 10%; */
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 30px;
