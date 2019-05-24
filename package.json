@@ -3,13 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "start": "node server.js",
     "lint": "vue-cli-service lint"
   },
+  "homepage": "https://github.com/gusrichardson/funny-pages#readme",
   "dependencies": {
     "core-js": "^2.6.5",
+    "express": "^4.17.0",
     "gh-pages": "^2.0.1",
+    "heroku": "^7.24.4",
     "vue": "^2.6.10",
     "vue-router": "^3.0.6"
   },
@@ -56,6 +61,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gusrichardson/funny-pages/issues"
-  },
-  "homepage": "https://github.com/gusrichardson/funny-pages#readme"
+  }
 }
