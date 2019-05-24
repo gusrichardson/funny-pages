@@ -6,7 +6,8 @@
       <div class="author-container">
         <div class="auth-image left">
           <!-- <img :src="becker" alt="Helaine Becker"> -->
-          <img :src="require('../assets/becker.jpg')">
+          <img src="@/assets/becker.jpg" alt="Helaine Becker">
+          <!-- <img :src="require('../assets/becker.jpg')"> -->
         </div>
         <div class="auth-text">
           <p>
@@ -19,7 +20,8 @@
       </div>
       <div class="author-container">
         <div class="auth-image right">
-          <img v-bind:src="chan" alt="Marty Chan">
+          <img :src="require('@/assets/chan.jpg')" alt="marty chan">
+          <!-- <img v-bind:src="chan" alt="Marty Chan"> -->
         </div>
         <div class="auth-text">
           <p>
