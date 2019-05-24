@@ -34,7 +34,8 @@
       </div>
       <div class="author-container">
         <div class="auth-image left">
-          <img src="../assets/grant.jpg" alt="Vicki Grant">
+          <img v-bind:src="grant" alt="vicki grant">
+          <!-- <img src="../assets/grant.jpg" alt="Vicki Grant"> -->
         </div>
         <div class="auth-text">
           <p>
@@ -121,12 +122,15 @@
 import becker from "../assets/becker.jpg";
 import chan from "../assets/chan.jpg";
 
+const grant = require("../assets/grant.jpg");
+
 export default {
   name: "Authors",
   data: function() {
     return {
       becker: becker,
-      chan: chan
+      chan: chan,
+      grant: grant
     };
   }
 };
