@@ -103,7 +103,7 @@
       </div>
       <div class="author-container">
         <div class="auth-image right">
-          <img src="../assets/sylvester.jpg" alt="Kevin Sylvester">
+          <img src="dist/assets/sylvester.jpg" alt="Kevin Sylvester">
         </div>
         <div class="auth-text">
           <p>
