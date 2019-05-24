@@ -115,8 +115,8 @@
 </template>
 
 <script>
-import becker from "../assets/becker.jpg";
-import chan from "../assets/chan.jpg";
+import becker from "./assets/becker.jpg";
+import chan from "./assets/chan.jpg";
 
 export default {
   name: "Authors",
