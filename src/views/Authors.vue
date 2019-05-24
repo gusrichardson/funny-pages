@@ -91,7 +91,9 @@
         <div class="auth-text">
           <p>
             <span class="bold">Richard Scrimger</span> is the award-winning author of more than twenty books for children and adults, including The Nose from Jupiter, Zomboy, Viminy Crowe’s Comic Book and The Wolf and Me. When he’s not writing or talking about writing, Richard teaches at Humber College and gets laughed at by his children. He has four of them. Well, really, they have him. He lives in Toronto. Visit him at
-            <a href="https://www.richardscrimger.com">richardscrimger.com</a> .
+            <a
+              href="https://www.richardscrimger.com"
+            >richardscrimger.com</a> .
           </p>
         </div>
       </div>
