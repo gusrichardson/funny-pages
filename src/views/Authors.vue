@@ -5,7 +5,7 @@
       <h2>Authors</h2>
       <div class="author-container">
         <div class="auth-image left">
-          <img src="../assets/becker.jpg" alt="Helaine Becker">
+          <img :src="becker" alt="Helaine Becker">
         </div>
         <div class="auth-text">
           <p>
@@ -18,7 +18,7 @@
       </div>
       <div class="author-container">
         <div class="auth-image right">
-          <img src="../assets/chan.jpg" alt="Marty Chan">
+          <img v-bind:src="chan" alt="Marty Chan">
         </div>
         <div class="auth-text">
           <p>
@@ -115,8 +115,17 @@
 </template>
 
 <script>
+import becker from "../assets/becker.jpg";
+import chan from "../assets/chan.jpg";
+
 export default {
-  name: "Authors"
+  name: "Authors",
+  data: function() {
+    return {
+      becker: becker,
+      chan: chan
+    };
+  }
 };
 </script>
 
