@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "deploy": "gh-pages -d docs",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
-  "homepage": "https://github.com/gusrichardson/funny-pages#readme",
+  "homepage": "https://github.com/gusrichardson/funny-pages",
   "dependencies": {
     "core-js": "^2.6.5",
     "express": "^4.17.0",
@@ -23,6 +23,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "vue-gh-pages": "^1.19.0",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
