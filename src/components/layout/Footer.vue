@@ -83,6 +83,7 @@ footer {
   /* color: #ff4f4f; */
   /* color: #c7f9f9; */
   /* color: #96eaea; */
+
   color: #68d0d0;
 }
 

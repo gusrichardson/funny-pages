@@ -196,6 +196,7 @@ input::-moz-focus-inner {
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
   background: #c7f9f9;
+  /* background: linear-gradient(180deg, #fffdf8, #c7f9f9); */
   /* background: #62dcdc; */
 }
 h1,
@@ -208,12 +209,15 @@ p {
 
 h1 {
   font-family: "Luckiest Guy", cursive;
-  font-size: 5rem;
+  font-size: 5.5rem;
   line-height: 0.8;
   /* color: #ff7272; */
   color: #ff4f4f;
-  text-shadow: 1px 1px black, 2px 2px black;
-  letter-spacing: 1px;
+  text-shadow: 1px 1px #ffdd9a, 2px 2px #ffdd9a, 3px 3px #ffdd9a,
+    4px 4px #ffdd9a;
+  /* text-shadow: 1px 1px white, 2px 2px white, 3px 3px white, 4px 4px white; */
+  /* text-shadow: 1px 1px #42b4b4, 2px 2px #42b4b4; */
+  letter-spacing: 3px;
 }
 h2 {
   line-height: 1;
@@ -247,5 +251,10 @@ input {
   width: 1000px;
   /* border: 2px solid red; */
   margin: 0 auto;
+}
+
+.bold {
+  font-weight: bold;
+  color: #ff4f4f;
 }
 </style>

@@ -33,10 +33,6 @@ export default {
 </script>
 
 <style scoped>
-.bold {
-  font-weight: bold;
-  color: #ff4f4f;
-}
 .about-text {
   background: #fffdf8;
   padding: 30px;
