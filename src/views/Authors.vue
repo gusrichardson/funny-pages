@@ -5,9 +5,7 @@
       <h2>Authors</h2>
       <div class="author-container">
         <div class="auth-image left">
-          <!-- <img :src="becker" alt="Helaine Becker"> -->
-          <img src="@/assets/becker.jpg" alt="Helaine Becker">
-          <!-- <img :src="require('../assets/becker.jpg')"> -->
+          <img :src="becker" alt="Helaine Becker">
         </div>
         <div class="auth-text">
           <p>
@@ -20,8 +18,7 @@
       </div>
       <div class="author-container">
         <div class="auth-image right">
-          <img :src="require('@/assets/chan.jpg')" alt="marty chan">
-          <!-- <img v-bind:src="chan" alt="Marty Chan"> -->
+          <img v-bind:src="chan" alt="Marty Chan">
         </div>
         <div class="auth-text">
           <p>
@@ -35,7 +32,6 @@
       <div class="author-container">
         <div class="auth-image left">
           <img v-bind:src="grant" alt="vicki grant">
-          <!-- <img src="../assets/grant.jpg" alt="Vicki Grant"> -->
         </div>
         <div class="auth-text">
           <p>
@@ -49,7 +45,7 @@
       </div>
       <div class="author-container">
         <div class="auth-image right">
-          <img src="../assets/hrab.jpg" alt="Naseem Hrab">
+          <img v-bind:src="hrab" alt="Naseem Hrab">
         </div>
         <div class="auth-text">
           <p>
@@ -62,7 +58,7 @@
       </div>
       <div class="author-container">
         <div class="auth-image left">
-          <img src="../assets/juby.jpg" alt="Susan Juby">
+          <img v-bind:src="juby" alt="Susan Juby">
         </div>
         <div class="auth-text">
           <p>
@@ -75,7 +71,7 @@
       </div>
       <div class="author-container">
         <div class="auth-image right">
-          <img src="../assets/nielsen.jpg" alt="Susin Nielsen">
+          <img v-bind:src="nielsen" alt="Susin Nielsen">
         </div>
         <div class="auth-text">
           <p>
@@ -90,7 +86,7 @@
       </div>
       <div class="author-container">
         <div class="auth-image left">
-          <img src="../assets/scrimger.jpg" alt="Richard Scrimger">
+          <img v-bind:src="scrimger" alt="Richard Scrimger">
         </div>
         <div class="auth-text">
           <p>
@@ -103,7 +99,7 @@
       </div>
       <div class="author-container">
         <div class="auth-image right">
-          <img src="dist/assets/sylvester.jpg" alt="Kevin Sylvester">
+          <img v-bind:src="sylvester" alt="Kevin Sylvester">
         </div>
         <div class="auth-text">
           <p>
@@ -121,8 +117,12 @@
 <script>
 import becker from "../assets/becker.jpg";
 import chan from "../assets/chan.jpg";
-
-const grant = require("../assets/grant.jpg");
+import grant from "../assets/grant.jpg";
+import hrab from "../assets/hrab.jpg";
+import juby from "../assets/juby.jpg";
+import nielsen from "../assets/nielsen.jpg";
+import scrimger from "../assets/scrimger.jpg";
+import sylvester from "../assets/sylvester.jpg";
 
 export default {
   name: "Authors",
@@ -130,7 +130,12 @@ export default {
     return {
       becker: becker,
       chan: chan,
-      grant: grant
+      grant: grant,
+      hrab: hrab,
+      juby: juby,
+      nielsen: nielsen,
+      scrimger: scrimger,
+      sylvester: sylvester
     };
   }
 };
@@ -140,6 +145,14 @@ export default {
 .bold {
   font-weight: bold;
   color: #ff4f4f;
+}
+#authors-section .wrapper {
+  background: #fffdf8;
+  border-radius: 0 0 10px 10px;
+}
+
+#authors-section .wrapper h2 {
+  margin-left: 30px;
 }
 #authors-banner {
   background-image: url("../assets/books.jpg");
@@ -151,8 +164,6 @@ export default {
 .author-container {
   height: 450px;
   display: flex;
-  background: #fffdf8;
-  /* border: 1px solid red; */
 }
 
 .author-container:nth-child(even) {

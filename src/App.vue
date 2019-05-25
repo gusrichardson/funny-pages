@@ -24,6 +24,7 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
 
 article,
 aside,
@@ -232,7 +233,10 @@ a {
 }
 
 p,
-li {
+li,
+label,
+button,
+input {
   font-family: "Roboto", sans-serif;
   font-size: 125%;
   letter-spacing: 1px;
