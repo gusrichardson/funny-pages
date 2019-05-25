@@ -187,6 +187,10 @@ export default {
   /* box-shadow: 10px 10px #ffdd9a; */
   /* border: 2px solid red; */
 }
+.auth-image:nth-child(1) {
+  background-image: url(../assets/becker.jpg);
+  background-size: 100% auto;
+}
 
 .right img {
   box-shadow: 15px 15px #ffdd9a;
